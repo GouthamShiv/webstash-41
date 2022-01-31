@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -12,5 +12,67 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    background-color: #fbfcfe;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    padding: 30px;
+    max-width: 1000px;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px #000 solid;
+    background-color: #fff;
+}
+
+.code-container {
+    display: flex;
+    margin: 40px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.code {
+    margin: 1%;
+    width: 100px;
+    height: 120px;
+    font-size: 75px;
+    font-weight: 300;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    -moz-appearance: textfield;
+}
+
+.code::-webkit-outer-spin-button,
+.code::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+.code:valid {
+    border-color: #3498db;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+.info {
+    color: #777;
+    padding: 10px;
+    max-width: 400px;
+    line-height: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #eaeaea;
+}
+
+@media (max-width: 600px) {
+    .code-container {
+        flex-wrap: wrap;
+    }
+
+    .code {
+        height: 80px;
+        max-width: 70px;
+        font-size: 60px;
+    }
 }
